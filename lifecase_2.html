@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Spectrum Educational tool
+
+</title>
+<link rel="stylesheet" href="http://www.auburn.edu/template/styles/sidebar.css" media="screen" type="text/css"  />
+<!--#include virtual="/template/includes/head.html" -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" href="./files/colorbox.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/c/video.js"></script>
+<script type="text/javascript">
+function setupVideo() {
+    var v = document.getElementById("media");
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) {
+    v.setAttribute("src", "./videos/NegativeGroup.m4v");
+}
+else 
+{
+    v.setAttribute("src", "./videos/NegativeGroup.mp4");
+    v.setAttribute("src", "./videos/NegativeGroup.ogv");
+}
+}
+</script>
+</head>
+<body onLoad="setupVideo();">
+<div id="pageWrap"> 
+  <div id="headerWrap">
+    <div id="header">
+      <div id="logo">
+          <a href="http://www.auburn.edu/"><img src="./files/headerLogo.png" size="14px" alt="Auburn University Homepage"></a>
+      	
+      </div>
+      <div id="headerTitle">
+        <div class="titleArea">
+        	<span class="mainHeading"><!-- TemplateBeginEditable name="unitTitle" -->Spectrum  Educational Tool<!-- TemplateEndEditable --></span>
+          <span class="subHeading"><!-- TemplateBeginEditable name="unitSubTitle" -->an online resource  training for student 
+			teachers<!-- TemplateEndEditable --></span>
+        </div>
+      </div>
+    </div>
+		<table class="nav">
+		    <td width="600"></td>
+            <td style="font-style:italic;width:150;text-align:right;font-size:14px; color:#FFFFFF;">Welcome Back</td>
+			<td style="font-style:inherit;text-align:middle;font-size:14px;"><a href="logout.php">Logout</a></td>
+
+    </table>
+  </div>
+  <div id="contentArea">
+    <div class="contentDivision"> 
+      <p class="breadcrumb"> <!-- TemplateBeginEditable name="breadcrumb" --> <a  href="./lifecases.html">Life Cases</a>  &gt;Life Case 2 <!-- TemplateEndEditable --> </p>
+			<!-- TemplateBeginEditable name="body" -->
+     
+ <h3><strong>Life Case 2: Negative Group Dynamics </strong></h3>
+   <br>
+<video src="./videos/NegativeGroup.mp4" id="media" style="float:right;" controls="controls" poster="./image2/2/2.png" height="300" width="350" style="margin: 0px 5px  0px 5px;">
+</video>
+<!--<video id="media" style="float:right;" height="300" width="350" margin="0px 5px  0px 5px;" ></video>-->
+<p>
+Ms. Lily is a teacher to sixth grade students. There are four students in her class who have disruptive behaviour 
+by acting out and seeking attention. One day while Ms. Lily was teaching the class, they were talking and cracking up at each other.
+To her surprise, one of the students started dancing in the class. 
+Even after the lunch time, when the rest of the class had already left back to the classroom, they were still playing.
+After the class has started, they walked 15 minutes late into the classroom when the quiz review is going on. 
+During the quiz review, Ms. Lily has decided to review the quiz in groups.
+After forming their group, the boys talked so loud and asked questions that had already been answered out loud. 
+In addition, while the class is going on, one of the boys was constantly sneezing. After each sneeze one of the other boys would say "bless you" loud.
+The behaviour of these four boys was making  other students pay more attention to them than they were to the teacher. 
+This is the case of disruptive behaviour in the classroom.
+</p>
+
+
+<table border="0" width="100%">
+
+   <tr width="33%">
+    <input type="submit" value="Discussion and Reflection" onClick="javascript:window.location.href='file:./lifecase_2_Reflections.html';">
+   <tr/>
+
+</table>
+   
+    </div>
+    <div class="sidebar"> <!-- TemplateBeginEditable name="sidebar" -->
+        <a class="upLink" href="./home.html" target="_self" title="Upto Chapter 3">Upto Homepage</a> 
+	    <a href="./lifecases.html" target="_self" title="lifecase_3.2">Life Cases</a>  
+		<br/>
+        <a href="./lifecase_2.html" target="_self" title="lifecase_3.2.1">Life Case 2: Video</a>
+        <a href="./lifecase_2_Reflections.html" target="_self" title="lifecase_3.2.2">Life Case 2: Reflections</a>
+        <a href="./lifecase_2_answers.html" target="_self" title="lifecase_3.2.3">Life Case 2: Answers</a>
+      </div>
+  </div>
+  <div id="contentArea_bottom"></div>
+  <div id="footerWrap">
+    <div id="footer">
+    
+    </div>  
+    <div id="subfooter">
+      Auburn University | Auburn, Alabama 36849 | (334) 844-4000  | <script  type="text/javascript">emailE='auburn.edu'; emailE=('YourEmailAddress' + '@' + emailE); document.write("<a  href='mailto:" + emailE + "'>" + emailE + "</a>");</script>
+      <br />
+      <a href="https://fp.auburn.edu/ocm/auweb_survey">Website Feedback</a> | <a  href="http://www.auburn.edu/privacy">Privacy</a> | <a  href="http://www.auburn.edu/oit/it_policies/copyright_regulations.php">Copyright &copy; 
+      <script type="text/javascript">date = new Date(); document.write(date.getFullYear());</script></a>
+    </div>
+  </div>
+  <!--#include virtual="/template/includes/gatc.html" --> 
+</div>
+</body>
+</html>
