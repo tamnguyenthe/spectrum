@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<style>
+	 /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none;
+    }
+  }
+		p{
+		text-align:justify;
+	}
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+	
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="Teams.html">Teams</a></li>
+        <li class="active"><a href="Services.html">Services</a></li>
+        <li class="active"><a href="Tools.html">Tools</a></li>
+        <li class="active"><a href="Contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class ="container-fluid">
+	<h1>Teams</h1>
+	<div class="row">
+		<div class="col-md-4">
+			<h3>Dr.Cherly Seals</h3>
+			<img src="sample.jpg" class="img-circle" alt="Dr.Seals" style="width:200px;height:200px">
+			<p>Cheryl Seals is an associate professor in computer science & software engineering at Auburn University with over 12 years of experience in CS teaching at the university level and have worked to provide active learning activities or problem based learning assignments in my User Interface Design & Game Design/Development classes.</p>
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View more</button>
+			<div id="demo" class="collapse">
+				<p>Dr. Seals has over 18 years in computing training and work related to computing education and computing industry (i.e. as a Member of Technical Staff at Bellcore, Polaroid, and Application Integration & Test at IBM). She has worked since 1998 with retention and outreach scholarship programs and other initiatives to improve STEM education at all levels with over $2 million in funding in the area of scholarship and outreach scholarship to support areas of Broadening Participation in Computing (e.g. support the recruitment and retention of women and under-represented groups in computing. As an associate professor, she has developed over 50 research and/or outreach publications, and more than 50 presentations to support the recruitment and retention of students in computing and have supported over 2 dozen computing camps.</p>
+				<p>Dr. Seals has also worked with National Alliances for student support and service learning since 2006. One of these initiatives is the STARS Alliance (starscomputingcorps.org) a regional academic partnerships with over 50 institutions, industry, K-12 and the community to strengthen local broadening of computing by focusing on K-12 outreach, community service, student leadership and computing diversity research. She has worked with another national mentoring program the Institute of African Americans Mentoring in Computing Sciences(iAAMCS) iAAMCS.org, that powers the newly formed National Society of Blacks in Computing NSBC.org.</p>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h3>Dr.Harrison</h3>
+			<img src="Harrison.jpg" class="img-circle" alt="Dr.Strange" style="width:200px;height:200px">
+			<p> Something....</p>
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">View more</button>
+			<div id="demo1" class="collapse">
+			<p>1,2,3,4,5,6,7,8,9</p>	
+
+			</div>
+		
+		</div> 
+		<div class="col-md-4">
+			<h3>Dr.Thomas</h3>
+			<img src="thomas.jpg" class="img-circle" alt="Dr.Seals" style="width:200px;height:200px">
+			<p>Hello!!</p>
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">View more</button>
+			<div id="demo2" class="collapse">
+				<p>10,11,23,6556ng nfdjgkhsdkh fiuhobojfd</p>
+				
+
+			</div>
+		
+		</div> 
+		<div class="col-md-4">
+			<h3>Dr.Tripp</h3>
+			<img src="Tripp.jpg" class="img-circle" alt="Dr.Seals" style="width:200px;height:200px">
+			<p>jfd bdj</p>
+			<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">View more</button>
+			<div id="demo3" class="collapse">
+				<p>hbreukh ykghgk h</p>
+
+			</div>
+		
+		</div> 
+		
+		
+		
+	</div>
+ </div>
+
+
+
+<!-- <div class="container">
+
+  <table class="table">
+    < <thead>
+	<tr>
+        <th>Members</th>
+        <th>Description</th>
+	</tr>
+    </thead> 
+	
+    <tbody>
+      <tr>
+        <td>Dr.Tripp</td>
+        <td>Bio</td>
+       
+      </tr>
+      <tr>
+        <td>Dr.Seals</td>
+        <td>Bio</td>
+       
+      </tr>
+	   <tr>
+        <td>Dr.Jamie Harrison</td>
+        <td>Bio</td>
+       
+      </tr>
+	   <tr>
+        <td>Dr.Chippewa Thomas</td>
+        <td>Bio</td>
+       
+      </tr>
+     
+    </tbody>
+  </table>
+</div> -->
+
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
