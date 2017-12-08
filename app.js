@@ -4,6 +4,8 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var session = require('express-session');
 var MongoStore = require('connect-mongo')(session);
+var path = require('path');
+var engines = require('consolidate');
 
 //connect to MongoDB
 mongoose.connect('mongodb://localhost/testForAuth');
@@ -33,6 +35,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // serve static files from template
 // app.use(express.static(__dirname + '/templateLogReg'));
 app.use(express.static(__dirname + '/spectrum'));
+
+app.engine('html', engines.nunjucks);
+app.set('view engine', 'html');
+app.set('views', path.join(__dirname, 'spectrum'));
 
 // include routes
 var routes = require('./routes/router');
