@@ -41,7 +41,6 @@ Spectrum Educational tool
     </div>
 		<table class="nav">
       <td width="800"></td>
-            <td style="text-align:right;font-size:14px;"><a href="logout.php">Logout</a></td>
 
 
     </table>
@@ -74,15 +73,20 @@ Spectrum Educational tool
 	
 
 </ul>
-<input type="submit" style='margin:auto;' value="Teacher's Note" onClick="javascript:window.location.href='file:./TNote_1.html';">
+        <form name="answer" action="/tnote" method="get">
+            <table>
+                <td width="245" align="left"><input type="hidden" name="caseNumber" value="1" maxlength="50" style="width:175px; text-transform:none;"></td></tr>
+                <tr><input type="submit" value="Teachers Note" onClick="javascript:window.location.href='./casestudy_1_answers.html';"></tr>
+                <tr>&nbsp;&nbsp;&nbsp;</tr>
+                <tr><input type="button" value="Back to Answer" onClick="javascript:window.location.href='./casestudy_1_answers.html';"></tr>
+            </table>
+        </form>
 
  </div>
-     <div class="sidebar"> <!-- TemplateBeginEditable name="sidebar" -->
-	  <a class="upLink" href="./home.html" target="_self" title="Upto Chapter 3">Upto Homepage</a>      <br />
-		<a href="./casestudy_1.html" target="_self" title="casestudy_3.1">Casestudy 1: Video</a>
-	 
-		 <a href="./casestudy_1_Reflections.html" target="_self" title="casestudy_3.2">Casestudy 1: Reflections</a>
-<a href="./casestudy_1_answers.html" target="_self" title="casestudy_3.3">Casestudy 1: Answers</a>
+      <div class="sidebar">
+          <!-- TemplateBeginEditable name="sidebar" -->
+          <a class="upLink" href="./home" target="_self" title="Home">Home </a> <br/>
+          <a href="/caseselect" target="_self" title="Chapter 1">Case Studies</a>
       </div>
 	  </div>
       <div id="contentArea_bottom"></div>

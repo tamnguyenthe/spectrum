@@ -64,9 +64,18 @@ function MM_swapImage() { //v3.0
                 </div>
             </div>
             <table class="nav">
-                <td width="600"></td>
-                <td style="font-style:italic;width:150;text-align:right;font-size:14px; color:#FFFFFF;">Welcome Back</td>
-                <td style="font-style:inherit;text-align:middle;font-size:14px;"><a href="logout.php">Logout</a></td>
+                <td width="400"></td>
+                {% if username == "guest" %}
+                <td style="font-style:italic;text-align:right;font-size:14px; color:#FFFFFF;">Welcome Guest</td>
+                <td style="font-style:italic;text-align:right;font-size:14px; color:#FFFFFF;">
+                    <a class="upLink" href="./login.html" target="_self" title="Home">LOGIN</a>
+                </td>
+                {% else %}
+                <td style="font-style:italic;text-align:right;font-size:14px; color:#FFFFFF;">Welcome {{username}}</td>
+                <td style="font-style:italic;text-align:right;font-size:14px; color:#FFFFFF;">
+                    <a class="upLink" href="/logout" target="_self" title="Home">LOGOUT</a>
+                </td>
+                {% endif %}
 
             </table>
         </div>
@@ -75,9 +84,9 @@ function MM_swapImage() { //v3.0
                 <p class="breadcrumb" style="font-size:22px"> <!-- TemplateBeginEditable name="breadcrumb" --> <a href="./home.html">Home </a>  &gt;Life Cases <!-- TemplateEndEditable --></p>
                 <table width="800" height="600" border="0" cellspacing="70" cellpadding="1">
                     <tr>
-                        <td><a href="file:./lifecase_1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','image2/1/1.png',1)"><img src="image2\1\2.png" name="Image21" width="300" height="200" border="0"></a></td>
-                        <td><a href="file:./lifecase_2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','image2/2/1.png',1)"><img src="image2\2\2.png" name="Image22" width="300" height="200" border="0"></a></td>
-                        <td><a href="file:./lifecase_3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','image2/3/1.png',1)"><img src="image2\3\2.png" name="Image23" width="300" height="200" border="0"></a></td>
+                        <td><a href="./lifecase_1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','image2/1/1.png',1)"><img src="image2\1\2.png" name="Image21" width="300" height="200" border="0"></a></td>
+                        <td><a href="./lifecase_2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','image2/2/1.png',1)"><img src="image2\2\2.png" name="Image22" width="300" height="200" border="0"></a></td>
+                        <td><a href="./lifecase_3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','image2/3/1.png',1)"><img src="image2\3\2.png" name="Image23" width="300" height="200" border="0"></a></td>
                     </tr>
                     <tr>
                         <td><div align="center" class="STYLE1"> Threatening Student</div></td>
@@ -85,9 +94,9 @@ function MM_swapImage() { //v3.0
                         <td><div align="center" class="STYLE1"> Bullying Student</div></td>
                     </tr>
                     <tr>
-                        <td><a href="file:./lifecase_4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','image2/4/1.png',1)"><img src="image2\4\2.png" name="Image24" width="300" height="200" border="0"></a></td>
-                        <td><a href="file:./lifecase_5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','image2/5/1.png',1)"><img src="image2\5\2.png" name="Image25" width="300" height="200" border="0"></a></td>
-                        <td><a href="file:./lifecase_6.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','image2/6/1.png',1)"><img src="image2\6\2.png" name="Image26" width="300" height="200" border="0"></a></td>
+                        <td><a href="./lifecase_4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','image2/4/1.png',1)"><img src="image2\4\2.png" name="Image24" width="300" height="200" border="0"></a></td>
+                        <td><a href="./lifecase_5.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','image2/5/1.png',1)"><img src="image2\5\2.png" name="Image25" width="300" height="200" border="0"></a></td>
+                        <td><a href="./lifecase_6.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','image2/6/1.png',1)"><img src="image2\6\2.png" name="Image26" width="300" height="200" border="0"></a></td>
                     </tr>
                     <tr>
                         <td><div align="center" class="STYLE1">Disrespectful Student</div></td>
@@ -102,10 +111,10 @@ function MM_swapImage() { //v3.0
             </div>
             <div class="sidebar">
                 <!-- TemplateBeginEditable name="sidebar" -->
-                <a class="upLink" href="./home.html" target="_self" title="Home">Upto Home </a>      <br />
-                <a href="./caseselect.html" target="_self" title="Chapter 1">Case Studies</a>
+                <a class="upLink" href="/home" target="_self" title="Home">Home </a>      <br />
+                <a href="/caseselect" target="_self" title="Chapter 1">Case Studies</a>
 
-                <a href="./lifecases.html" target="_self" title="Chapter 2">Life Cases</a>
+                <a href="/lifecases" target="_self" title="Chapter 2">Life Cases</a>
             </div>
         </div>
         <div id="contentArea_bottom"></div>
