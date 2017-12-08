@@ -36,7 +36,7 @@ Spectrum Educational tool
             {% else %}
             <td style="font-style:italic;text-align:right;font-size:14px; color:#FFFFFF;">Welcome {{username}}</td>
             <td style="font-style:italic;text-align:right;font-size:14px; color:#FFFFFF;">
-                <a class="upLink" href="/home" target="_self" title="Home">LOGOUT</a>
+                <a class="upLink" href="/logout" target="_self" title="Home">LOGOUT</a>
             </td>
             {% endif %}
 
@@ -75,9 +75,9 @@ to support pre-service and in-dervice teachers.</p>
     <div class="sidebar"> <!-- TemplateBeginEditable name="sidebar" -->
         <a class="upLink" href="/home" target="_self" title="Home">Home</a>
         {% if username != "guest" %}
-        <a href="learning_progress.html" target="_self" title="My Progerss">My Progress</a>
+        <a href="./learning_progress.html" target="_self" title="My Progress">My Progress</a>
         {% endif %}
-        <a href="./caseselect.html" target="_self" title="Case Select">Case Select</a>
+        <a href="/caseselect" target="_self" title="Case Select">Case Select</a>
       </div>
   </div>
   <div id="contentArea_bottom"></div>
