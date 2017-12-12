@@ -50,14 +50,12 @@ else
             </div>
             <table class="nav">
                 <td width="600"></td>
-                <td style="font-style:italic;width:150;text-align:right;font-size:14px; color:#FFFFFF;">Welcome Back</td>
-                <td style="font-style:inherit;text-align:center;font-size:14px;"><a href="logout.php">Logout</a></td>
 
             </table>
         </div>
         <div id="contentArea">
             <div class="contentDivision">
-                <p class="breadcrumb"> <!-- TemplateBeginEditable name="breadcrumb" --> <a href="./caseselect.html">Case Select</a>  &gt;Case study 7 <!-- TemplateEndEditable --> </p>
+                <p class="breadcrumb"> <!-- TemplateBeginEditable name="breadcrumb" --> <a href="/caseselect">Case Select</a>  &gt;Case study 7 <!-- TemplateEndEditable --> </p>
                 <!-- TemplateBeginEditable name="body" -->
 
                 <h3><strong>Case study 7: Nostalgic Student  </strong></h3>
@@ -74,21 +72,25 @@ else
 
                 <table border="0" width="100%">
 
-                    <tr width="33%">
-                        <input type="submit" value="Discussion and Reflection" onClick="javascript:window.location.href='./casestudy_7_Reflections.html';">
-                    <tr />
+                    <form name="reflection" action="/reflection" method="get">
+                        <table border="0" width="100%">
+                            <td width="245" align="left"><input type="hidden" name="caseNumber" value="7" maxlength="50"
+                                                                style="width:175px; text-transform:none;"></td>
+                            </tr>
+                            <tr width="33%">
+                                <input type="submit" value="Discussion and Reflection">
+                            <tr/>
+
+                        </table>
+                    </form>
 
                 </table>
 
             </div>
             <div class="sidebar">
                 <!-- TemplateBeginEditable name="sidebar" -->
-                <a class="upLink" href="./home.html" target="_self" title="Upto Chapter 3">Upto Homepage</a>
-                <a href="./caseselect.html" target="_self" title="casestudy_3.7">Case Select</a>
-                <br />
-                <a href="./casestudy_7.html" target="_self" title="casestudy_3.7.1">Casestudy 7: Video</a>
-                <a href="./casestudy_7_Reflections.html" target="_self" title="casestudy_3.7.2">Casestudy 7: Reflections</a>
-                <a href="./casestudy_7_answers.html" target="_self" title="casestudy_3.7.3">Casestudy 7: Answers</a>
+                <a class="upLink" href="./home" target="_self" title="Home">Home </a> <br/>
+                <a href="/caseselect" target="_self" title="Case Studies">Case Studies</a>
             </div>
         </div>
         <div id="contentArea_bottom"></div>

@@ -99,6 +99,62 @@ router.get('/home', function (req, res, next) {
     }
 });
 
+function process_progress(results) {
+    completed = [];
+    incompleted = [];
+    point = 0;
+    total_point = 36;
+    currentPoint = 0;
+    for (i = 0; i < results.length; i++) {
+        currentPoint = 0;
+        if (results[i].isViewed) {
+            point = point + 1;
+            currentPoint = currentPoint + 1;
+        }
+        if (results[i].isAnswered) {
+            point = point + 1;
+            currentPoint = currentPoint + 1;
+        }
+        if (results[i].isViewedTeacherNote) {
+            point = point + 1;
+            currentPoint = currentPoint + 1;
+        }
+
+        if (!results[i].isViewedTeacherNote) {
+            incompleted.push({progress: results[i], currentPoint: currentPoint*33} );
+        } else {
+            completed.push(results[i]);
+        }
+    }
+    return { completed: completed, incompleted: incompleted, point: Math.round(point*100/total_point), total_point: total_point};
+}
+
+router.get('/learning_progress', function (req, res, next) {
+    if (req.session.userId) {
+        User.findById(req.session.userId)
+            .exec(function (error, user) {
+                if (error) {
+                    return next(error);
+                } else {
+                    if (user === null) {
+                        var err = new Error('Not authorized! Go back!');
+                        err.status = 400;
+                        return next(err);
+                    } else {
+                        UserProgress.find({username: user.username}, function (err, results) {
+                            progress = process_progress(results);
+                            console.log(progress.incompleted);
+                            res.render("learning_progress", {progress: progress, username: user.username});
+                        });
+                    }
+                }
+            });
+    } else {
+        return res.render("learning_progress", {username: "guest"});
+    }
+});
+
+
 router.get('/caseselect', function (req, res, next) {
     if (req.session.userId) {
         User.findById(req.session.userId)

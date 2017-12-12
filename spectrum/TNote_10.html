@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Spectrum Educational tool
+
+    </title>
+    <style>
+        h4 {
+            position: absolute;
+            top: 70px;
+        }
+
+        video {
+            position: relative;
+            top: 0px;
+        }
+
+        h3 {
+            position: absolute;
+            top: 30px;
+        }
+
+        input {
+            position: relative;
+            top: 40px;
+        }
+    </style>
+    <link rel="stylesheet" href="http://www.auburn.edu/template/styles/sidebar.css" media="screen" type="text/css"/>
+    <!--#include virtual="/template/includes/head.html" -->
+    <!-- TemplateBeginEditable name="head" -->
+    <!-- TemplateEndEditable -->
+    <link rel="stylesheet" href="./files/colorbox.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script src="./files/jquery.colorbox.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Examples of how to assign the ColorBox event to elements
+
+            $(".inline").colorbox({inline: true, width: "50%", height: "80%"});
+
+
+        });
+    </script>
+</head>
+<body>
+<div id="pageWrap">
+    <div id="headerWrap">
+        <div id="header">
+            <div id="logo">
+                <a href="http://www.auburn.edu/"><img src="./files/headerLogo.png" size="14px"
+                                                      alt="Auburn University Homepage"></a>
+
+            </div>
+            <div id="headerTitle">
+                <div class="titleArea">
+                    <span class="mainHeading"><!-- TemplateBeginEditable name="unitTitle" -->Spectrum Educational Tool
+                        <!-- TemplateEndEditable --></span>
+                    <span class="subHeading"><!-- TemplateBeginEditable name="unitSubTitle" -->an online resource training for student
+			teachers<!-- TemplateEndEditable --></span>
+                </div>
+            </div>
+        </div>
+        <table class="nav">
+            <td width="800"></td>
+
+
+        </table>
+    </div>
+    <div id="contentArea">
+        <div class="contentDivision">
+            <p class="breadcrumb"> <!-- TemplateBeginEditable name="breadcrumb" --> <a href="./casestudy_10.html">Case
+                study 10 </a> &gt; Reflection and discussion<!-- TemplateEndEditable -->
+                <!-- TemplateBeginEditable name="body" -->
+            <h3><strong>Case study 9: Personal Talker </strong>
+            </h3>
+            <input type="button" align="right" style="float: right;" value="Next Case"
+                   onClick="javascript: window.location.href = './casestudy_11.html';">
+            <h4><strong> Teacher's Note</strong></h4>
+            <br/>
+            <!--<p align ="justify">-->
+            <!--<div align="center">-->
+            <br/>
+            <video src=".\videos\10_TNote.mp4" position="relative" style="margin-left:50px; height:450px;"
+                   controls="controls" poster="./image/10/3.jpg" height="600" width="600"></video>
+            <!--</div>-->
+            </p>
+
+
+        </div>
+        <div class="sidebar"> <!-- TemplateBeginEditable name="sidebar" -->
+            <a class="upLink" href="./home" target="_self" title="Home">Home </a> <br/>
+            <a href="/caseselect" target="_self" title="Case Studies">Case Studies</a>
+        </div>
+    </div>
+    <div id="contentArea_bottom"></div>
+    <div id="footerWrap">
+        <div id="footer">
+
+        </div>
+        <div id="subfooter">
+            Auburn University | Auburn, Alabama 36849 | (334) 844-4000 |
+            <script type="text/javascript">emailE = 'auburn.edu';
+            emailE = ('YourEmailAddress' + '@' + emailE);
+            document.write("<a href='mailto:" + emailE + "'>" + emailE + "</a>");</script>
+            <br/>
+            <a href="https://fp.auburn.edu/ocm/auweb_survey">Website Feedback</a> | <a
+                href="http://www.auburn.edu/privacy">Privacy</a> | <a
+                href="http://www.auburn.edu/oit/it_policies/copyright_regulations.php">Copyright &copy;
+            <script type="text/javascript">date = new Date();
+            document.write(date.getFullYear());</script>
+        </a>
+        </div>
+    </div>
+    <!--#include virtual="/template/includes/gatc.html" -->
+</div>
+</body>
+</html>

@@ -5,106 +5,113 @@
         Spectrum Educational tool
 
     </title>
-    <link rel="stylesheet" href="http://www.auburn.edu/template/styles/sidebar.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="http://www.auburn.edu/template/styles/sidebar.css" media="screen" type="text/css"/>
     <!--#include virtual="/template/includes/head.html" -->
     <!-- TemplateBeginEditable name="head" -->
     <!-- TemplateEndEditable -->
-    <link rel="stylesheet" href="./files/colorbox.css" />
+    <link rel="stylesheet" href="./files/colorbox.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/c/video.js"></script>
     <script type="text/javascript">
-function setupVideo() {
- var v = document.getElementById("media");
-if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) {
-    v.setAttribute("src", "./videos/9.m4v");
-}
-else
-
-{
-    v.setAttribute("src", "./videos/9.mp4");
-    v.setAttribute("src", "./videos/9.ogv");
-}
-}
+        function setupVideo() {
+            var v = document.getElementById("media");
+            if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) {
+                v.setAttribute("src", "./videos/12.m4v");
+            }
+            else {
+                v.setAttribute("src", "./videos/12.mp4");
+                // v.setAttribute("src", "./videos/12.ogv");
+            }
+        }
     </script>
 
 
 </head>
 <body onLoad="setupVideo();">
-    <div id="pageWrap">
-        <div id="headerWrap">
-            <div id="header">
-                <div id="logo">
-                    <a href="http://www.auburn.edu/"><img src="./files/headerLogo.png" alt="Auburn University Homepage"></a>
+<div id="pageWrap">
+    <div id="headerWrap">
+        <div id="header">
+            <div id="logo">
+                <a href="http://www.auburn.edu/"><img src="./files/headerLogo.png" alt="Auburn University Homepage"></a>
 
-                </div>
-                <div id="headerTitle">
-                    <div class="titleArea">
-                        <span class="mainHeading"><!-- TemplateBeginEditable name="unitTitle" -->Spectrum  Educational Tool<!-- TemplateEndEditable --></span>
-                        <span class="subHeading">
+            </div>
+            <div id="headerTitle">
+                <div class="titleArea">
+                    <span class="mainHeading"><!-- TemplateBeginEditable name="unitTitle" -->Spectrum  Educational Tool
+                        <!-- TemplateEndEditable --></span>
+                    <span class="subHeading">
                             <!-- TemplateBeginEditable name="unitSubTitle" -->an online resource  training for student
                             teachers<!-- TemplateEndEditable -->
                         </span>
-                    </div>
                 </div>
             </div>
-            <table class="nav">
-                <td width="600"></td>
-                <td style="font-style:italic;width:150;text-align:right;font-size:14px; color:#FFFFFF;">Welcome Back</td>
-                <td style="font-style:inherit;text-align:center;font-size:14px;"><a href="logout.php">Logout</a></td>
+        </div>
+        <table class="nav">
+            <td width="600"></td>
+
+        </table>
+    </div>
+    <div id="contentArea">
+        <div class="contentDivision">
+            <p class="breadcrumb"> <!-- TemplateBeginEditable name="breadcrumb" --> <a href="/caseselect">Case
+                Select</a> &gt;Case study 12 <!-- TemplateEndEditable --> </p>
+            <!-- TemplateBeginEditable name="body" -->
+
+            <h3><strong>Case study 12: An introverted child </strong></h3>
+            <br>
+            <video src="./videos/PersonalStalker.mp4" id="media" style="float:right;" controls poster="./image/12/2.jpg"
+                   height="300" width="350" margin="0px 5px  0px 5px;"></video>
+            <p>Alex is an introverted student. He doesn&apos;t talk to anyone in his school. Other students always bullied him and made fun of him. Alex is like this because his parents are so strict, and he is scared to tell all these things to his parents. Because of this other student continue to make fun of him. Children in his class call Alex dumb and stupidest student in the whole school. We will explore in this situation what should Alex&apos;s teacher and his parents can do to handle this type of case. </p>
+            <p>
+
+
+            </p>
+
+            <table border="0" width="100%">
+
+                <form name="reflection" action="/reflection" method="get">
+                    <table border="0" width="100%">
+                        <td width="245" align="left"><input type="hidden" name="caseNumber" value="12" maxlength="50"
+                                                            style="width:175px; text-transform:none;"></td>
+                        </tr>
+                        <tr width="33%">
+                            <input type="submit" value="Discussion and Reflection">
+                        <tr/>
+
+                    </table>
+                </form>
 
             </table>
+
         </div>
-        <div id="contentArea">
-            <div class="contentDivision">
-                <p class="breadcrumb"> <!-- TemplateBeginEditable name="breadcrumb" --> <a href="./caseselect.html">Case Select</a>  &gt;Case study 9 <!-- TemplateEndEditable --> </p>
-                <!-- TemplateBeginEditable name="body" -->
-
-                <h3><strong>Case study 9: Personal Talker  </strong></h3>
-                <br>
-                <video src="./videos/PersonalStalker.mp4" id="media" style="float:right;" controls poster="./image/9/2.png" height="300" width="350" margin="0px 5px  0px 5px;"></video>
-                <p>Ms. Smith is a new teacher and to get to know her students better she ask them about their weekend every Monday.
- She has a student named Andy that always tells the class and her to much information, because of this she might have to change her Monday routine.</p>
-                <p>
-
-
-                </p>
-
-                <table border="0" width="100%">
-
-                    <tr width="33%">
-                        <input type="submit" value="Discussion and Reflection" onClick="javascript:window.location.href='./casestudy_9_Reflections.html';">
-                    <tr />
-
-                </table>
-
-            </div>
-            <div class="sidebar">
-                <!-- TemplateBeginEditable name="sidebar" -->
-                <a class="upLink" href="./home.html" target="_self" title="Upto Chapter 3">Upto Homepage</a>
-                <a href="./caseselect.html" target="_self" title="casestudy_3.9">Case Select</a>
-                <br />
-                <a href="./casestudy_9.html" target="_self" title="casestudy_3.9.1">Casestudy 9: Video</a>
-                <a href="./casestudy_9_Reflections.html" target="_self" title="casestudy_3.9.2">Casestudy 9: Reflections</a>
-                <a href="./casestudy_9_answers.html" target="_self" title="casestudy_3.9.3">Casestudy 9: Answers</a>
-            </div>
+        <div class="sidebar">
+            <!-- TemplateBeginEditable name="sidebar" -->
+            <a class="upLink" href="./home" target="_self" title="Home">Home </a> <br/>
+            <a href="/caseselect" target="_self" title="Case Studies">Case Studies</a>
         </div>
-        <div id="contentArea_bottom"></div>
-        <div id="footerWrap">
-            <div id="footer">
-
-            </div>
-            <div id="subfooter">
-                Auburn University | Auburn, Alabama 36849 | (334) 844-4000  |
-                <script type="text/javascript">emailE='auburn.edu'; emailE=('YourEmailAddress' + '@' + emailE); document.write("<a  href='mailto:" + emailE + "'>" + emailE + "</a>");</script>
-                <br />
-                <a href="https://fp.auburn.edu/ocm/auweb_survey">Website Feedback</a> | <a href="http://www.auburn.edu/privacy">Privacy</a> | <a href="http://www.auburn.edu/oit/it_policies/copyright_regulations.php">
-                    Copyright &copy;
-                    <script type="text/javascript">date = new Date(); document.write(date.getFullYear());</script>
-                </a>
-            </div>
-        </div>
-        <!--#include virtual="/template/includes/gatc.html" -->
     </div>
+    <div id="contentArea_bottom"></div>
+    <div id="footerWrap">
+        <div id="footer">
+
+        </div>
+        <div id="subfooter">
+            Auburn University | Auburn, Alabama 36849 | (334) 844-4000 |
+            <script type="text/javascript">emailE = 'auburn.edu';
+            emailE = ('YourEmailAddress' + '@' + emailE);
+            document.write("<a  href='mailto:" + emailE + "'>" + emailE + "</a>");</script>
+            <br/>
+            <a href="https://fp.auburn.edu/ocm/auweb_survey">Website Feedback</a> | <a
+                href="http://www.auburn.edu/privacy">Privacy</a> | <a
+                href="http://www.auburn.edu/oit/it_policies/copyright_regulations.php">
+            Copyright &copy;
+            <script type="text/javascript">date = new Date();
+            document.write(date.getFullYear());</script>
+        </a>
+        </div>
+    </div>
+    <!--#include virtual="/template/includes/gatc.html" -->
+</div>
 </body>
 </html>
