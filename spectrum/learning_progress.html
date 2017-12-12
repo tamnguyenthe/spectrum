@@ -4,6 +4,21 @@
 <link href="show.css" media="screen" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="http://www.auburn.edu/template/styles/sidebar.css" media="screen" type="text/css"/>
 <!--#include virtual="/template/includes/head.html" -->
+<script type="text/javascript">
+    function openInProgress(event) {
+        inprogress = document.getElementsByClassName("in-progress-body");
+        inprogress[0].setAttribute("data-state-body", "active");
+        completed = document.getElementsByClassName("completed-body");
+        completed[0].setAttribute("data-state-body", "inactive");
+    }
+
+    function openCompleted(event) {
+        inprogress = document.getElementsByClassName("in-progress-body");
+        inprogress[0].setAttribute("data-state-body", "inactive");
+        completed = document.getElementsByClassName("completed-body");
+        completed[0].setAttribute("data-state-body", "active");
+    }
+</script>
 
 </head>
 <body>
@@ -92,10 +107,10 @@
                         <div class="grid-row grid-row--no-collapse tabs tabs-color-scheme--darkgrey">
                             <div class="grid-col--align-center grid-col-12 grid-col--center grid-col--no-padding grid-col--no-margin">
                                 <a href="#" class="tab padding--1 margin-left--quarter margin-right--quarter"
-                                   data-data="null" data-state="inactive" data-type="in-progress" id="in-progress">In-Progress
+                                   data-data="null" data-state="inactive" data-type="in-progress" id="in-progress" onclick="openInProgress(event)">In-Progress
                                     Cases ({{progress.incompleted.length}})</a>
                                 <a href="#" class="tab padding--1 margin-left--quarter margin-right--quarter"
-                                   data-data="null" data-state="active" data-type="completed" id="completed">Completed
+                                   data-data="null" data-state="active" data-type="completed" id="completed" onclick="openCompleted(event)">Completed
                                     Cases ({{progress.completed.length}})</a>
                             </div>
                         </div>
